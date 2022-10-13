@@ -1,13 +1,16 @@
 import React from 'react';
 import NavBar from './components/NavBar.jsx';
-import ItemListContainer from './components/ItemListContainer.jsx';
+import Hero from './components/Hero.jsx';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer.js';
 import './style.css';
+
 
 export default function App() {
   return (
     <>
       <NavBar background={'transparent'} />
-      <ItemListContainer title="El Rey de la Cerveza" />
+      <Hero title="El Rey de la Cerveza" />
+      <ItemListContainer/>
     </>
   );
 }
