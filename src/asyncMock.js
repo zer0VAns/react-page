@@ -15,7 +15,25 @@ export const getProducts = () => {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(productos)
-        }, 1000)
+        },100)
     }
     )
+}
+
+export const getProductById = (id) => {
+    return new Promise (resolve => {
+        setTimeout(() =>{
+            resolve(productos.find(prod => {
+                return prod.id === id
+            }))
+        }, 500)
+    })
+}
+
+export const getProductsByCategory = (categoryId) => {
+    return new Promise (resolve => {
+        setTimeout (() => {
+            resolve(productos.filter(prod => prod.category === categoryId))
+        })
+    }, 500)
 }

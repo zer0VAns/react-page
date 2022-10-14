@@ -1,6 +1,6 @@
 import React from 'react';
 import CartWidget from './CartWidget';
-
+import { Link } from 'react-router-dom';
 
 
 import './styles/NavBar.css';
@@ -42,11 +42,12 @@ const NavBar = ({ background }) => {
         </nav>
 
         {/* logo de la marca */}
+        <Link to='/'>
         <div className="logo-container">
 
           <img src={brand} alt="logo" id="logo1" />
         </div>
-
+        </Link>
         {/* cart widget */}
         <CartWidget />
       </div>

@@ -1,0 +1,22 @@
+.productos{
+    display: flex;
+    flex-direction: row;    
+}
+#productosLista{
+    margin: 150px;
+    padding-left: 200px;
+    position: relative;
+    width: 100%;
+
+}
+#productoss{
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0 100px 0 100px;
+}
+#listado{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    margin: 20px
+}
