@@ -7,9 +7,9 @@ const Item = ({ img, name, category, price, id}) => {
         <div id="productoss">
             <img src={img} alt={name} style={{width:100}}/>
             <h1>{name}</h1>
-            <h3>{category}</h3>
-            <p>{price}</p>
-            <button onClick={() => navigate(`/detail/${id}`)}>Ver detalle</button>
+            <h3 className="textoDetalle">{category}</h3>
+            <p className="textoDetalle">${price}</p>
+            <button onClick={() => navigate(`/detail/${id}`)} className="botonVerDetalle">Ver detalles</button>
         </div>
     )
 }

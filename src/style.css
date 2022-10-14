@@ -20,5 +20,10 @@
 
 html,
 body {
-  font-family: var(--mulish-font);
+  font-family: var(--mulish-font);    
+  height: 100vh;
+  background-position: 67%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('https://i.imgur.com/SDv0LT7.png');
 }

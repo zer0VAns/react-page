@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './styles/ItemListContainer.css';
 
 const Hero = ({ title }) => {
@@ -11,7 +12,9 @@ const Hero = ({ title }) => {
             ¡La mente muy clara y la cerveza muy fría! Vení a conocer las
             mejores cervezas del inframundo.
           </p>
+          <Link to={'/products'}>
           <button class="button-primary">Comprar</button>
+          </Link>
         </article>
       </div>
     </section>

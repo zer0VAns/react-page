@@ -19,9 +19,6 @@ const ItemListContainer =() => {
 
     }, [])
 
-    // console.log(productos)
-    // const productsMapped = productos.map(prod => <li key={prod.id} style={{color:"red"}}>{prod.name}</li>)
-    // console.log(productsMapped)
 
 if(loading){
     return <h1>Loading...</h1>
@@ -29,12 +26,10 @@ if(loading){
 }
    
         return(
-        <div className="productos">
-            <h1 id="listado">Listado de productos</h1>
-            {/* { productsMapped }
-         FORMA 2: products.map (prod => <li style={{color:"red"}}>{prod.name} </li>) */}
+        <div className="productos background-productos">
+            <h1 id="listado">Nuestros productos</h1>
          <ItemList productos={productos}/>
-         
+
         </div>      
     )
 }

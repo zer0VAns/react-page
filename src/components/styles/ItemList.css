@@ -1,22 +1,40 @@
 .productos{
     display: flex;
-    flex-direction: row;    
+    flex-direction: row; 
+    top: 280px;   
 }
 #productosLista{
     margin: 150px;
-    padding-left: 200px;
+    padding-left: 35px;
     position: relative;
     width: 100%;
 
 }
 #productoss{
+    max-width: 500px;
+    width: 500px;
     padding-left: 0px;
     padding-right: 0px;
-    margin: 0 100px 0 100px;
+    margin: 0 0px 0 0px;
+    text-align: center;
+    color: yellow;
 }
 #listado{
     width: 100%;
     position: absolute;
     text-align: center;
-    margin: 20px
+    margin: 270px 0;
+    font-size: 50px;
+    color: wheat;
+}
+.botonVerDetalle{
+    background-color: var(--pimary-color);
+    border: none;
+    font-family: var(--mulish-font);
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 20px auto;
+    width: 112px;
+    height: 36px;
+    cursor: pointer;
 }

@@ -12,9 +12,10 @@ export default function App() {
     <div className='App'>
       <BrowserRouter>
       <NavBar background={'transparent'} />
-      <Hero title="El Rey de la Cerveza" />
+
       <Routes>
-        <Route path='/' element={<ItemListContainer/>}/>
+      <Route path='/' element={<Hero title="El Rey de la Cerveza"/>} />
+        <Route path='/products' element={<ItemListContainer/>}/>
         <Route path='/detail/:productid' element={<ItemDetailContainer/>}/>
       </Routes>
       </BrowserRouter>

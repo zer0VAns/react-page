@@ -1,0 +1,23 @@
+.detallesProducto{
+    height: 100vh;
+    padding-top: 280px;
+    text-align: center;
+    color: wheat;
+    width: 500px;
+    margin: 0 auto;
+}
+.textoDetalle{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.sizeTexto{
+    font-size: 16px;
+}
+#nombreDetalle{
+    padding-top: 20px;
+    font-size: 26px;
+}
+#tituloDetalle{
+    font-size: 40px;
+    padding-bottom: 50px;
+}

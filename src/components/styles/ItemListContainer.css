@@ -4,11 +4,8 @@
     background-position: 67%;
     background-size: cover;
     background-repeat: no-repeat;
-  }
-  .hero-slide-1 {
     background-image: url('https://i.imgur.com/SDv0LT7.png');
-  }
-  
+  }  
   .hero-container {
     display: grid;
     grid-template: 1fr 2fr 1fr / 0.5fr 2fr 0.5fr;
