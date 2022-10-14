@@ -27,11 +27,15 @@ const NavBar = ({ background }) => {
             <li>
               <a href="/">Inicio</a>
             </li>
+         
             <li className="products-item">
-              <a href="/">
-                Productos <span className="arrow"></span>
-              </a>
+            <Link to={'/products'}>
+              <a href="">
+                Productos 
+                </a>
+                </Link>
             </li>
+    
             <li>
               <a href="/">Blog</a>
             </li>

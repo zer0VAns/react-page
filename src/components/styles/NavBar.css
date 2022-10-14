@@ -58,6 +58,8 @@
   
   .products-item {
     min-width: 96px;
+    text-decoration: none;
+    color: white;
   }
   
   /*backgrounds*/
