@@ -24,23 +24,32 @@ const NavBar = ({ background }) => {
         {/* links de navegación */}
         <nav>
           <ul className="nav-container">
+            
             <li>
+            <Link to={'/'}>
               <a href="/">Inicio</a>
+              </Link>
             </li>
-         
+          
             <li className="products-item">
             <Link to={'/products'}>
-              <a href="">
+              <a href="/">
                 Productos 
                 </a>
                 </Link>
+                
             </li>
-    
+            
             <li>
-              <a href="/">Blog</a>
+              <Link to={'category/Bebida'}>
+              <a href="/">Bebidas</a>
+
+              </Link>
             </li>
             <li>
-              <a href="/">Contacto</a>
+              <Link to={'category/Snack'}>
+              <a href="/">Snacks</a>
+              </Link>
             </li>
           </ul>
         </nav>

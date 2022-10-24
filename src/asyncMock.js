@@ -8,6 +8,9 @@ const productos = [
     },
     {
         id: '3', name: 'Imperial Amber Lager', price:'500ars', category:'Bebida', img: 'https://ardiaprod.vtexassets.com/arquivos/ids/226921/Cerveza-Imperial-Amber-Lager-lata-473-Ml-_1.jpg?v=637920205547030000', stock:20, description:'Es una cerveza con una combinación de lúpulos patagónicos y un blend de finas maltas que generan su color rojizo, un delicado aroma y un amargor apacible que permite dar a luz a un tostado delicioso.'
+    },
+    {
+        id: '4', name: 'Lays', price:'200ars', category:'Snack', img: 'https://www.matildaexpress.com.ar/wp-content/uploads/2021/07/PAPAS-FRITAS-LAYS-CLASICAS-X90G.png', stock:20, description:'Todo empieza con papas de campo, que se cocinan y condimentan a la perfección para que cada LAYS tenga una crocantes insuperable y rebose del sabor a papa fresca. '
     }
 ]
 
@@ -26,14 +29,13 @@ export const getProductById = (id) => {
             resolve(productos.find(prod => {
                 return prod.id === id
             }))
-        }, 500)
+        })
     })
 }
-
 export const getProductsByCategory = (categoryId) => {
     return new Promise (resolve => {
         setTimeout (() => {
             resolve(productos.filter(prod => prod.category === categoryId))
         })
-    }, 500)
+    })
 }

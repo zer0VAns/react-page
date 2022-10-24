@@ -1,21 +1,32 @@
 .detallesProducto{
     height: 100vh;
-    padding-top: 280px;
+    padding-top: 270px;
     text-align: center;
-    color: wheat;
+    color: var(--pimary-color);
     width: 500px;
-    margin: 0 auto;
+    margin: 0px auto;
+    
+}
+#itemDetail{
+    background-color: rgb(92, 70, 70);
+    height: 500px;
+    padding-top: 30px;
+    width: 500px;
 }
 .textoDetalle{
     padding-top: 20px;
     padding-bottom: 10px;
+    margin: 0 auto;
 }
 .sizeTexto{
     font-size: 16px;
+    width: 450px;
+    color: white;
 }
 #nombreDetalle{
     padding-top: 20px;
     font-size: 26px;
+    color: white;
 }
 #tituloDetalle{
     font-size: 40px;
