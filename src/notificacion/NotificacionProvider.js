@@ -7,17 +7,16 @@ const Notificacion = ({ mensaje, severity }) => {
     const notificacionEstilos = {
         position: 'absolute',
         top: 100,
-        right: 10,
+        right: 40,
         width: 'auto',
         height: 'auto',
         backgroundColor: severity === 'success' ? 'blue':'red',
         color: 'white',
-        padding: '10px 20px 10px 20px'
-
+        padding: '10px 20px 10px 20px',
     }
     if(mensaje === '') return
     return (
-        <div style={notificacionEstilos} className={severity === 'success' ? 'greenClass' : 'redClass'}>
+        <div style={notificacionEstilos} className={severity === 'success' ? 'greenClass' : 'redClass'} id="notificacionEstilo">
             {mensaje}
         </div>
     )
@@ -33,7 +32,7 @@ export const NotificacionProvider = ({ children }) => {
 
         setTimeout(() => {
             setMensaje('')
-        },2000)
+        },6000)
     }
     return (
         <NotificacionContext.Provider value={{setNotificacion}}>
