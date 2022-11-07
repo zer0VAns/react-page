@@ -21,7 +21,8 @@ const Cart = () =>{
                 ))
             }
             <div>
-                <button> Comprar productos </button>
+                <h2>Precio total: {total}</h2>
+                <button id="botonComprarP"> Comprar productos </button>
             </div>
         </div>
         
