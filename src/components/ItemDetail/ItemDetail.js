@@ -31,7 +31,7 @@ import { Link } from "react-router-dom"
             !isInCart(id)
                 ?
             <Counter onAdd={onAdd} stock={stock} initial={quantityAdded} />
-            : <Link to='/cart' className='Option'>Finalizar compra</Link>
+            : <Link to='/cart' className='Option'><button className="botonVerDetalle">Finalizar compra</button></Link>
 
             }
         </div>

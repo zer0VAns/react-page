@@ -1,0 +1,32 @@
+.botonCounter{
+    width: 50px;
+    margin: 0 10px 0 10px;
+}
+.countID{
+    display: flex;
+    flex-direction: row;
+    width: 800px !important;
+    height: auto;
+    bottom: 500px;
+    margin-left: 40px;
+}
+.botonAgregar {
+    background-color: var(--pimary-color);
+    border: 2px solid black;
+    width: 250px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 20px;
+    height: 60px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.botonAgregar:hover{
+    background-color: #f7c164;
+}
+.cantidad{
+    font-size: 30px !important;
+}
+.botones{
+    margin-top: 14px;
+}
