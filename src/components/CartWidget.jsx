@@ -13,7 +13,8 @@ const CartWidget = () => {
         {/* icono */}
         
        <img src="https://i.imgur.com/57lmOWw.png" id='logo2'/>
-      {totalQuantity}
+       <p className='qty-display'>{totalQuantity}</p>
+      
     </div>
     </Link>
   );

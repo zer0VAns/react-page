@@ -51,7 +51,7 @@ export const CartProvider = ({ children }) => {
     const getTotal = () => {
         let accuc = 0
         cart.forEach(prod => {
-            accuc = (accuc + prod.quantity) * prod.price
+            accuc += prod.quantity * parseInt(prod.price)
         })
         return accuc
     }
