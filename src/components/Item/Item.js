@@ -1,4 +1,6 @@
+import { useContext } from "react"
 import { Link, useNavigate } from "react-router-dom"
+import { Context } from "../../App"
 
 const Item = ({ img, name, category, price, id}) => {
     const navigate = useNavigate()

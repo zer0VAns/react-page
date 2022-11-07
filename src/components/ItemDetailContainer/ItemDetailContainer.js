@@ -4,7 +4,7 @@ import ItemDetail from "../ItemDetail/ItemDetail"
 import { useParams } from "react-router-dom"
 import "../styles/ItemDetail.css"
 
-const ItemDetailContainer = () => {
+const ItemDetailContainer = ({setCart}) => {
     const [product, setProduct] = useState({})
 
     const {productid} = useParams()
@@ -19,7 +19,7 @@ const ItemDetailContainer = () => {
     return (
         <div className="detallesProducto">
         <h1 id="tituloDetalle">Detalles del producto</h1>
-        <ItemDetail {...product}/>
+        <ItemDetail {...product} setCart={setCart}/>
         </div>
     )
 }

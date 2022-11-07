@@ -7,7 +7,7 @@ const Products =() => {
     const [productos, setProducts] = useState([])
     useEffect (() => {
         getProducts().then(response => {
-            console.log(response)
+            
             setProducts(response)
         })
     }, [])
